@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito sans', sans-serif;
+    color: #666;
+    background: #f2f2f2; 
+    font-size: 1em;
+    line-height: 1.5em;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#main-header {
+    background: #3E3E3E;
+    color: white;
+    height: 80px;
+}   
+
+#main-header a {
+    color: white;
+    }
+
+#logo-header {
+    float: left;
+    padding: 27px 0 0 20px;
+    text-decoration: none;
+}
+#logo-header:hover {
+    color: #0b76a6;
+}
+        
+#logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+}
+
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+    
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+            
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #0b76a6;
+}
+/*Pie de Página*/
+#main-footer {
+    background: #F3F3F3;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    height: 80px;
+    justify-content: space-between; /* Distribuir los elementos de manera equitativa */
+    flex-shrink: 0;
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formulario .card-body{
+    margin: auto;
+    background-color: #ffffff;
+    /*z-index: -9;*/
+    border-radius: 20px 20px 20px 20px;
+    /*display:inline-block;*/
+    vertical-align: top;
+}
+.formulario .card-body-l, .formulario .card-body-r{
+    display:inline-block;
+    width:210px;
+}
+.card{
+    background:transparent;
+    border:none;
+}
+
+#main-footer .footer-left,
+#main-footer .footer-right {
+    flex: 1; /* Hacer que cada división ocupe la mitad del ancho del contenedor */
+    padding: 10px; /* Añadir un poco de padding interno */
+    display: flex; /* Hacer que los contenedores sean flexibles */
+    align-items: center; /* Alinear verticalmente al centro */
+}
+
+#main-footer .footer-left {
+    justify-content: flex-start; /* Mueve el contenido a la izquierda */
+}
+
+#main-footer .footer-right {
+    justify-content: flex-end; /* Mueve los iconos a la derecha */
+}
+
+#main-footer .footer-right a {
+    color: #333333;
+    margin: 0 10px;
+    /*padding: 27px 0 0 20px;*/
+    text-decoration: none;
+    font-size: 24px; /* Tamaño del icono */
+}
+
+#main-footer p {
+    margin: 0;
+}
+
+#main-footer a {
+    color: #333333;
+}
+
+
+
+/* Estilos de la nueva sección */
+#main-section {
+    display: flex;
+    flex: 1; /* Para que esta sección ocupe todo el espacio disponible */
+    height: calc(100vh - 160px); /* Igual a la altura del header y footer */
+    background-color: #F3F3F3;
+}
+
+#main-section .section-left{
+    background-color: #8C8C8C;
+    flex: 1;
+}
+#main-section .section-right {
+    flex: 1;
+}
+
+#main-section .section-left img {
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;  /*Ajusta la imagen para que cubra el contenedor sin deformarse */
+}
+
+
+/* Formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input {
+    margin-bottom: 1px;
+    
+}
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.invalid-feedback {
+    font-size: 14px;
+    text-align: left;
+}
+.invalid-feedback img.warning-icon {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    width: 16px; /* Ajusta el tamaño del icono */
+    height: 16px; /* Ajusta el tamaño del icono */
+}
+.text-header{
+    font-size: 36px;
+    /* margin-top: 25%; */
+}
+.registrate-aqui{
+    margin: 10px auto -16px auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    background-color: #8ed5ee;
+    color: #161141;
+    /* max-width: 250px; */
+    border-radius: 17px 17px 0px 0px;
+    font-weight: 900;
+    line-height: 1.5rem;
+    padding: 25px 25px 35px 25px;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.submit-btn:disabled {
+    background-color: #eee;
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    #main-header {
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo-header {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        padding-right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: initial;
+    }
+
+    #main-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #main-section .section-left,
+    #main-section .section-right {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-section .section-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .text-header {
+        font-size: 24px;
+    }
+
+    .registrate-aqui {
+        font-size: 20px;
+        padding: 15px 15px 25px 15px;
+    }
+
+    .progress-step {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .progress-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-right {
+        padding-left: 20px;
+    }
+    
+    /* Estilos específicos para el footer en dispositivos móviles */
+    #main-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-left, .footer-right {
+        flex: 1;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-right {
+        margin-bottom: 10px;
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+    }
+
+    .footer-right a {
+        margin: 0 10px;
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+    }
+}
+
+
+
