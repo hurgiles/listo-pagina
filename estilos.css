@@ -104,8 +104,8 @@ nav ul li a:hover {
     background:transparent;
     border:none;
 }
-
-#main-footer .footer-left,
+/* #main-footer */
+.footer-left,
 #main-footer .footer-right {
     flex: 1; /* Hacer que cada división ocupe la mitad del ancho del contenedor */
     padding: 10px; /* Añadir un poco de padding interno */
@@ -120,8 +120,8 @@ nav ul li a:hover {
 #main-footer .footer-right {
     justify-content: flex-end; /* Mueve los iconos a la derecha */
 }
-
-#main-footer .footer-right a {
+/* #main-footer */
+.footer-right a {
     color: #333333;
     margin: 0 10px;
     /*padding: 27px 0 0 20px;*/
@@ -376,6 +376,42 @@ button:hover {
         align-items: center; /* Añadido */
     }
 }
+/*Progress bar */
+.progress {
+    position: relative;
+}
 
 
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.progress::before,
+.progress::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 2;
+}
+
+.progress::before {
+    left: 50%;
+    margin-left: -6px; /* Half the width of the circle */
+}
+.progress::first {
+    left: 0;
+    margin-left: 6px; /* Half the width of the circle */
+}
+.progress::after {
+    right: 0;
+    margin-right: 0; /* Half the width of the circle */
+}
 
