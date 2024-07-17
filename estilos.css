@@ -18,33 +18,35 @@ body {
     background: #3E3E3E;
     color: white;
     height: 80px;
+    display: flex;
+    justify-content: flex-start;;
+    align-items: center;
 }   
 
+#main-header img {
+    margin-left: 25px; /* Ajusta este valor según tus necesidades */
+    width: 200px;
+    /*height: 150px;*/
+}
 #main-header a {
     color: white;
     }
 
-#logo-header {
-    float: left;
-    padding: 27px 0 0 20px;
-    text-decoration: none;
-}
-#logo-header:hover {
-    color: #0b76a6;
-}
-        
-#logo-header .site-name {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-#logo-header .site-desc {
-    display: block;
-    font-weight: 300;
-    font-size: 0.8em;
-    color: #999;
-}
+    /*#header {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente 
+        align-items: center;    /* Centra verticalmente 
+        height: 100px;          /* Ajusta la altura del header según tus necesidades 
+    }*/
+    
+/* #logo-header {
+        padding: 0;
+        text-align: center;
+    }
+    
+    #logo-header img {
+        max-height: 100%;       /* Asegúrate de que la imagen no se salga del header 
+    }*/
 
 nav {
     float: right;
@@ -150,18 +152,21 @@ nav ul li a:hover {
 #main-section .section-left{
     background-color: #8C8C8C;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #main-section .section-right {
     flex: 1;
 }
 
-#main-section .section-left img {
+/*#main-section .section-left img {
     text-align: center;
     display: block;
     width: 80%;
     height: 80%;
-    object-fit: contain;  /*Ajusta la imagen para que cubra el contenedor sin deformarse */
-}
+    object-fit: contain;  justa la imagen para que cubra el contenedor sin deformarse.
+}*/
 
 
 /* Formulario */
@@ -370,7 +375,7 @@ button:hover {
     }
 
     .footer-right a {
-        margin: 0 10px;
+        margin: 0 40px;
         display: flex; /* Añadido */
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
@@ -414,4 +419,3 @@ button:hover {
     right: 0;
     margin-right: 0; /* Half the width of the circle */
 }
-
