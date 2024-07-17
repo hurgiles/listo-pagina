@@ -287,6 +287,86 @@ button:hover {
 }
 
 
+
+/*Progress bar */
+.progress {
+    position: relative;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.progress::before,
+.progress::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*width: 20px;*/
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 2;
+}
+
+.progress::before {
+    left: 50%;
+    margin-left: -6px; /* Half the width of the circle */
+}
+.progress::first {
+    left: 0;
+    margin-left: 6px; /* Half the width of the circle */
+}
+.progress::after {
+    right: 0;
+    margin-right: 0; /* Half the width of the circle */
+}
+
+/* labels */ 
+.label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+}
+.label.start {
+    left: 0;
+}
+.label.middle {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+}
+
+.label.end {
+    right: 0;
+}
+
+/* circulos */
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}  
+.circle.start {
+    left: 0;
+}
+
+.circle.middle {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+}
+
+.circle.end {
+    right: 0;
+}
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     #main-header {
@@ -363,6 +443,11 @@ button:hover {
         padding: 15px 15px 25px 15px;
     }
 
+    .progress {
+        position: relative;
+        top:10px;
+    }
+
     .progress-step {
         width: 100%;
         text-align: center;
@@ -411,42 +496,10 @@ button:hover {
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
     }
-}
-/*Progress bar */
-.progress {
-    position: relative;
-}
-
-
-.progress-bar {
-    width: 100%;
-    height: 15px;
-    background-color: #000;
-    z-index: 2;
-}
-
-.progress::before,
-.progress::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #000;
-    z-index: 2;
-}
-
-.progress::before {
-    left: 50%;
-    margin-left: -6px; /* Half the width of the circle */
-}
-.progress::first {
-    left: 0;
-    margin-left: 6px; /* Half the width of the circle */
-}
-.progress::after {
-    right: 0;
-    margin-right: 0; /* Half the width of the circle */
+    .label {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -5px;
+    }
 }
