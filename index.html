@@ -69,9 +69,15 @@
                         <!-- Formulario 1 -->
                         <form id="formulariolanding" enctype="application/x-www-form-urlencoded" class="needs-validation" novalidate>
                             <div class="col-md-12">
+                                <div class="label start" style="color: #333333;"><b>Datos Personales</b></div>
+                                <div class="label middle" style="color: #333333;">Contacto</div>
+                                <div class="label end" style="color: #333333;">Confirmación</div>
                                 <!-- Barra de progreso -->
                                 <div class="progress">
                                     <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="circle start"></div>
+                                    <div class="circle middle"></div>
+                                    <div class="circle end"></div>
                                 </div>
                                 <div class="row g-3 ">
                                     <h2 style="color: #333333" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
@@ -122,9 +128,15 @@
                         <!-- Formulario 2 -->
                         <form id="form2" enctype="application/x-www-form-urlencoded" class="needs-validation" novalidate>
                             <div class="col-md-12">
+                                <div class="label start" style="color: #333333;">Datos Personales</div>
+                                <div class="label middle" style="color: #333333;"><b>Contacto</b></div>
+                                <div class="label end" style="color: #333333;">Confirmación</div>
                                 <!-- Barra de progreso -->
                                 <div class="progress">
                                     <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="circle start"></div>
+                                    <div class="circle middle"></div>
+                                    <div class="circle end"></div>
                                 </div>
                                 <div class="row g-3 ">
                                     <h2 style="color: #333333" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
@@ -164,17 +176,23 @@
                                 <button id="complete" class="submit-btn">Completar registro</button>
                             </div>
                         </form>
-                    <!-- Campos adicionales de la ultima  -->
-                    <div id="confirmation" class="form-container" style="display: none;">
-                        <!-- Barra de progreso -->
-                        <div class="progress">
-                            <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- Campos adicionales de la ultima  -->
+                        <div id="confirmation" class="form-container" style="display: none;">
+                            <div class="label start" style="color: #333333;">Datos Personales</div>
+                            <div class="label middle" style="color: #333333;"><b>Contacto</b></div>
+                            <div class="label end" style="color: #333333;">Confirmación</div>
+                            <!-- Barra de progreso -->
+                            <div class="progress">
+                                <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="circle start"></div>
+                                <div class="circle middle"></div>
+                                <div class="circle end"></div>
+                            </div>
+                            <h2 id="confirmationMessage">[Nombre de usuario], ya estás por terminar!</h2>
+                            <p>Revisa tu bandeja de entrada de correos, da clic en el botón de verificar que encontrarás en el correo para que dirección de correo electrónico quede verificada y tu registro quedará registrado.</p>
                         </div>
-                        <h2 id="confirmationMessage">[Nombre de usuario], ya estás por terminar!</h2>
-                        <p>Revisa tu bandeja de entrada de correos, da clic en el botón de verificar que encontrarás en el correo para que dirección de correo electrónico quede verificada y tu registro quedará registrado.</p>
                     </div>
                 </div>
-                    </div>
             </section>
             <footer id="main-footer">
                 <div class="footer-left">
@@ -201,6 +219,6 @@
         <script>
             AOS.init();
         </script>
-        <script src="function.js"></script>
+        <script src="functions.js"></script>
     </body>
-</html>    
+</html>
