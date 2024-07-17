@@ -1,7 +1,36 @@
+@font-face {
+    font-family: 'aftikabold', monospace;
+    src: url(fonts/aftika-bold-webfont.woff2) format('woff2'),
+        url(fonts/aftika-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+
+}
+@font-face {
+    font-family: 'aftikaextrabold', monospace;
+    src: url(fonts/aftika-extrabold-webfont.woff2) format('woff2'),
+        url(fonts/aftika-extrabold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+
+}
+@font-face {
+    font-family: 'aftikaregular', monospace;
+    src: url(fonts/FontsFree-Net-AftikaRegular.ttf) format('ttf'),
+        url(fonts/aftika-regular-webfont.woff2) format('woff2'),
+        url(fonts/Aftika-ExtraBold.otf) format('otf'),
+        url(fonts/aftika-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito sans', sans-serif;
+    font-family: Nunito sans!important;
     color: #666;
     background: #f2f2f2; 
     font-size: 1em;
@@ -201,6 +230,7 @@ button:hover {
     font-size: 14px;
     text-align: left;
 }
+
 .invalid-feedback img.warning-icon {
     margin-right: 8px; /* Espacio entre el icono y el texto */
     width: 16px; /* Ajusta el tamaño del icono */
@@ -263,6 +293,7 @@ button:hover {
         text-align: center;
         height: auto;
         padding: 10px;
+        justify-content: center;
     }
 
     #logo-header {
@@ -295,7 +326,7 @@ button:hover {
     #main-section .section-left,
     #main-section .section-right {
         flex: none;
-        width: 100%;
+        /*width: 100%;*/
         height: auto;
     }
 
@@ -357,7 +388,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 20px 0;
+        padding: 0px 0;
     }
 
     .footer-left, .footer-right {
@@ -375,7 +406,7 @@ button:hover {
     }
 
     .footer-right a {
-        margin: 0 40px;
+        margin: 0 41.5px;
         display: flex; /* Añadido */
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
