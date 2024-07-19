@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             form2.style.display = 'block';
             // Actualizar la barra de progreso al 50%
             progressBar.style.width = '50%';
-            progressBar.textContent = '50%';
+            progressBar.textContent = '';
         }
     });
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form2.style.display = 'none';
         form1.style.display = 'block';
         progressBar.style.width = '0%';
-        progressBar.textContent = '0%';
+        progressBar.textContent = '';
     });
 
     complete.addEventListener('click', function(event) {
