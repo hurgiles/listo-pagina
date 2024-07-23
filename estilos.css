@@ -98,9 +98,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    background: #0b76a6;
-}
+
 /*Pie de Página*/
 #main-footer {
     background: #F3F3F3;
@@ -246,7 +244,7 @@ button:hover {
     font-size: 28px;
     font-weight: bolder;
     letter-spacing: 0px;
-    background-color: #8ed5ee;
+    background-color: #8ed5ee; /*colo cuando llena el formulario*/
     color: #161141;
     /* max-width: 250px; */
     border-radius: 17px 17px 0px 0px;
@@ -275,10 +273,10 @@ button:hover {
 }
 
 .submit-btn {
-    padding: 10px 20px;
+    padding: 10px 50px;
     background-color: #ccc;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: not-allowed;
 }
 
@@ -335,7 +333,7 @@ button:hover {
     top: -20px;
 }
 .label.start {
-    left: 0;
+    left: -20px;
 }
 .label.middle {
     left: 50%;
@@ -343,7 +341,7 @@ button:hover {
 }
 
 .label.end {
-    right: 0;
+    right: 25px;
 }
 
 /* circulos */
@@ -405,13 +403,13 @@ button:hover {
 
     #main-section .section-left,
     #main-section .section-right {
-        flex: none;
+        /*flex: none;*/
         /*width: 100%;*/
         height: auto;
     }
 
     #main-section .section-left img {
-        width: 100%;
+        width: 75%;
         height: auto;
     }
 
@@ -465,7 +463,7 @@ button:hover {
     }
 
     .section-right {
-        padding-left: 20px;
+        padding-left: 0px;
     }
     
     /* Estilos específicos para el footer en dispositivos móviles */
@@ -500,6 +498,23 @@ button:hover {
         width: 20px;
         height: 20px;
         position: absolute;
-        top: -5px;
+        top: 7px;
     }
+}
+/* boton instagram */
+.instagram-button {
+    background-color: #333333;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none; /* Esto quita el subrayado del enlace */
+    display: inline-block; /* Esto hace que el enlace se comporte como un botón */
+}
+.check-imagen {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
 }
