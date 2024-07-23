@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             form2.classList.add('was-validated');
         } else {
             var instagramUser = instagramField.value;
-            confirmationMessage.textContent = instagramUser + ", ¡ya estás por terminar!";
+            confirmationMessage.textContent = instagramUser;
             form2.style.display = 'none';
             confirmation.style.display = 'block';
             // Actualizar la barra de progreso al 100%
