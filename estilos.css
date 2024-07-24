@@ -222,7 +222,8 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #222222;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
 }
 .invalid-feedback {
     font-size: 14px;
@@ -244,7 +245,8 @@ button:hover {
     font-size: 28px;
     font-weight: bolder;
     letter-spacing: 0px;
-    background-color: #8ed5ee; /*colo cuando llena el formulario*/
+    /*background-color: #8ed5ee; colo cuando llena el formulario*/
+    background-color: #333333; /*colo cuando llena el formulario*/
     color: #161141;
     /* max-width: 250px; */
     border-radius: 17px 17px 0px 0px;
@@ -262,15 +264,24 @@ button:hover {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #333333;
     border-radius: 20px;
+    height: 50px;
 }
+
+
+.form-group input:hover,
+.form-group input:focus {
+    border-width: 2px solid #333333;
+}
+
 
 .submit-btn {
     padding: 10px 50px;
@@ -286,10 +297,11 @@ button:hover {
 
 
 
-/*Progress bar */
+
+/*Progress bar
 .progress {
     position: relative;
-}
+}*/
 
 
 .progress-bar {
@@ -346,12 +358,12 @@ button:hover {
 
 /* circulos */
 .circle {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: black;
     position: absolute;
-    top: 0;
+    top: -5px;
 }  
 .circle.start {
     left: 0;
