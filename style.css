@@ -289,6 +289,7 @@ button:hover {
     border: none;
     border-radius: 20px;
     cursor: not-allowed;
+    font-size: 1.5rem;
 }
 
 .submit-btn:disabled {
@@ -435,8 +436,10 @@ button:hover {
     }
 
     .submit-btn {
-        width: 100%;
+       /*width: 100%;*/
         padding: 10px;
+        display: inline-block;
+        margin-right: 2,3%;
     }
 
     h2 {
@@ -498,6 +501,8 @@ button:hover {
         display: flex; /* Añadido */
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
+        margin-left: 26px; 
+        margin-top: -10px;
     }
 
     .footer-right a {
