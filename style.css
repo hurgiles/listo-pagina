@@ -1,32 +1,32 @@
 @font-face {
-    font-family: 'aftikabold', monospace;
-    src: url(fonts/aftika-bold-webfont.woff2) format('woff2'),
-        url(fonts/aftika-bold-webfont.woff) format('woff');
-    font-weight: normal;
+    font-family: 'NeoSansStdBold';
+    src: url('fonts/NeoSansStd-Bold.woff2') format('woff2'),
+         url('fonts/NeoSansStd-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: optional;
-
 }
+
 @font-face {
-    font-family: 'aftikaextrabold', monospace;
-    src: url(fonts/aftika-extrabold-webfont.woff2) format('woff2'),
-        url(fonts/aftika-extrabold-webfont.woff) format('woff');
-    font-weight: normal;
+    font-family: 'NeoSansStdExtraBold';
+    src: url('fonts/NeoSansStd-ExtraBold.woff2') format('woff2'),
+         url('fonts/NeoSansStd-ExtraBold.woff') format('woff');
+    font-weight: extra-bold;
     font-style: normal;
     font-display: optional;
-
 }
+
 @font-face {
-    font-family: 'aftikaregular', monospace;
-    src: url(fonts/FontsFree-Net-AftikaRegular.ttf) format('ttf'),
-        url(fonts/aftika-regular-webfont.woff2) format('woff2'),
-        url(fonts/Aftika-ExtraBold.otf) format('otf'),
-        url(fonts/aftika-regular-webfont.woff) format('woff');
+    font-family: 'NeoSansStdRegular';
+    src: url('fonts/NeoSansStd-Regular.woff2') format('woff2'),
+         url('fonts/NeoSansStd-Regular.woff') format('woff'),
+         url('fonts/NeoSansStd-Regular.ttf') format('truetype'),
+         url('fonts/NeoSansStd-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: optional;
-
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -35,6 +35,13 @@ body {
     background: #f2f2f2; 
     font-size: 1em;
     line-height: 1.5em;
+}
+h1, h2, h3 {
+    font-family: 'NeoSansStdBold', sans-serif;
+}
+
+strong {
+    font-family: 'NeoSansStdExtraBold', sans-serif;
 }
 #container {
     display: flex;
