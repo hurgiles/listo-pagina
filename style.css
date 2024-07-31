@@ -84,6 +84,10 @@ strong {
         max-height: 100%;       /* Asegúrate de que la imagen no se salga del header 
     }*/
 
+h2 {
+    font-size: 30px !important;
+    /*text-align: center;*/
+}
 nav {
     float: right;
 }
@@ -295,7 +299,7 @@ button:hover {
 
 
 .submit-btn {
-    padding: 10px 50px;
+    padding: 10px 118px;
     background-color: #ccc;
     border: none;
     border-radius: 20px;
@@ -354,14 +358,15 @@ button:hover {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: -20px;
+    top: -25px;
 }
 .label.start {
-    left: -20px;
+    left: -40px;
 }
 .label.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
+    margin-left: -17.5px;
 }
 
 .label.end {
@@ -399,6 +404,17 @@ button:hover {
 .circle.end1 {
     right: 0;
     background-color: #149100;
+}
+/* Media Query para dispositivos móviles */
+@media (min-width: 768px) {
+    .submit-btn {
+        padding: 10px 47px;
+        background-color: #ccc;
+        border: none;
+        border-radius: 20px;
+        cursor: not-allowed;
+        font-size: 1.5rem;
+    }
 }
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -461,14 +477,14 @@ button:hover {
     }
 
     .submit-btn {
-       /*width: 100%;*/
+        /*width: 100%;*/
         padding: 10px 26px;
         display: inline-block;
         margin-right: 2.3%;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 26px !important;
         text-align: center;
     }
 
@@ -497,6 +513,9 @@ button:hover {
         position: absolute;
         z-index: 2;
     }
+    .progress {
+        margin-top: 15px !important;
+    }
 
     .progress-container {
         display: flex;
@@ -524,7 +543,8 @@ button:hover {
     }
     #main-footer p {
         margin-top: -10px;
-        font-size:1.2rem
+        font-size:1.2rem;
+        margin-right: 30px;
     }
 
     .footer-left, .footer-right {
@@ -539,7 +559,7 @@ button:hover {
         display: flex; /* Añadido */
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
-        margin-left: 27px !important; 
+        margin-left: 26px; 
         margin-top: -10px;
         order: -1;
     }
@@ -555,7 +575,7 @@ button:hover {
         width: 20px;
         height: 20px;
         position: absolute;
-        top: -7px;
+        top: -20px;
     }
 }
 /* boton instagram */
