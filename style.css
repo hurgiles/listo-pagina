@@ -539,7 +539,7 @@ button:hover {
         display: flex; /* Añadido */
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
-        margin-left: 26px; 
+        margin-left: 27px !important; 
         margin-top: -10px;
         order: -1;
     }
