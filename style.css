@@ -405,6 +405,25 @@ button:hover {
     right: 0;
     background-color: #149100;
 }
+/* Estilos para iPhone 11 y modelos más recientes */
+@media only screen and (min-width: 375px) and (max-width: 414px) and (min-device-pixel-ratio: 2) {
+    .submit-btn {
+        /* width: 100%; */
+        padding: 10px 10.2px;
+        display: inline-block;
+        margin-right: 2.3%;
+        }
+    .footer-right {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 26px !important;
+        margin-top: -10px;
+        order: -1;
+    }
+}
+
 /* Media Query para dispositivos móviles */
 @media (min-width: 768px) {
     .submit-btn {
