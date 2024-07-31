@@ -317,7 +317,6 @@ button:hover {
     border: 2px solid #333333 !important; /* Borde de 2 píxeles con color azul al hacer hover */
     box-shadow: none; /* Desactivar la sombra del hover en el botón con id 'back' */
 }
-
 .submit-btn:disabled {
     background-color: #eee;
 }
@@ -416,6 +415,23 @@ button:hover {
     right: 0;
     background-color: #149100;
 }
+/* boton instagram */
+.instagram-button {
+    background-color: #333333;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none; /* Esto quita el subrayado del enlace */
+    display: inline-block; /* Esto hace que el enlace se comporte como un botón */
+}
+.check-imagen {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
 /* Estilos para iPhone 11 y modelos más recientes */
 @media only screen and (min-width: 375px) and (max-width: 414px) and (min-device-pixel-ratio: 2) {
     .submit-btn {
@@ -445,6 +461,7 @@ button:hover {
         cursor: not-allowed;
         font-size: 1.5rem;
     }
+
 }
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -508,7 +525,7 @@ button:hover {
 
     .submit-btn {
         /*width: 100%;*/
-        padding: 10px 27.7px;
+        padding: 10px 11.9px;
         display: inline-block;
         margin-right: 2.3%;
     }
@@ -607,21 +624,17 @@ button:hover {
         position: absolute;
         top: -20px;
     }
+    .instagram-button {
+        background-color: #333333;
+        color: white;
+        padding: 10px 115px;
+    }
 }
-/* boton instagram */
-.instagram-button {
-    background-color: #333333;
-    color: white;
-    padding: 10px 50px;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: none; /* Esto quita el subrayado del enlace */
-    display: inline-block; /* Esto hace que el enlace se comporte como un botón */
-}
-.check-imagen {
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
+@media only screen and (max-width: 480px) {
+    .submit-btn {
+        /* width: 100%; */
+        padding: 10px 10.2px;
+        display: inline-block;
+        margin-right: 2.3%;
+        }
 }
