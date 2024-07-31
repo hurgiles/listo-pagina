@@ -307,6 +307,17 @@ button:hover {
     font-size: 1.5rem;
 }
 
+#back {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: 1px solid #333333;
+    /*transition: border 0.3s ease;*/
+}
+#back:hover {
+    border: 2px solid #333333 !important; /* Borde de 2 píxeles con color azul al hacer hover */
+    box-shadow: none; /* Desactivar la sombra del hover en el botón con id 'back' */
+}
+
 .submit-btn:disabled {
     background-color: #eee;
 }
