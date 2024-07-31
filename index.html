@@ -47,6 +47,14 @@
         #form2, #confirmation {
             display: none;
         }
+        /* Sobrescribir el estilo de background-image de Bootstrap */
+        
+        .was-validated .form-control:invalid {
+            background-image: none;
+        }
+        .progress-bar-success {
+            background-color: black !important;
+        }
     </style>      
     </head>
     <body class="inicio">
@@ -89,7 +97,7 @@
                                 </div>
                                 <div class="row mb-3 form-group">
                                     <label for="form_nombre">Nombre*</label>
-                                    <input type="text" class="form-control" id="form_nombre"  name="nombre" placeholder="Nombre" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+">
+                                    <input type="text" class="form-control" id="form_nombre"  name="nombre" placeholder="Nombre"  pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
                                         alt="Advertencia" class="warning-icon">
@@ -98,7 +106,7 @@
                                 </div>
                                 <div class="row mb-3 form-group">
                                     <label for="apellido">Apellido*</label>
-                                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+">
+                                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido"  pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" required>
                                     <div class="invalid-feedback">
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2YW2xTdRzHjxJviMobqAm7AcIG6+X0vvV62vV22o11Z2uHxHjhwUBCFIh4CcbEB4kCxkCMCUpCUHmRxAeivBo10ZCgvBB3adfR9vT0ctqelm0w1q85I87AjF3P6aYP+yb/15PP55zf+f1//z9BrGY1q2lIKj5mYznARATf0EeCj7kkeJkrgndgTHAPjAue0JWSO/Rd0dV/suTu33PTwTxL/B8Cml4r+MN7y3T4R4Eeqpb9Qyj7ByH4GAheBoJnYH6V3CGUevrvLtcuFJ19KDh6fy06AvuzpuATKw/OMA9XgpHDAh3myoEwyrQIvnT4IiWuXhQdQfD2IM/b6KOTBuaxFYGf6osYK8Hw9XIgArnwBbu4AijYAuCt/mihm6aWFb7SO3yoHIzMNhq+YKXBW/zIW3xzebP3PRDEAw0FFx9Y6R0+XgmK4MsDz4vL7APf7UWuy30eJPlQwwQqvcMfrxR8vsuDvMmNnKHnaxDvPigfPhg5stLweaMbeUMPcjrXB7LgheCwZTlrnv83eL0LWb2zmtFStCR4eDyPVAKRP6TAp+w0ohYfohYvomYPxrs9SFl9dcHn9E7kdBSyGipdUFjX1y1QCUaOSoHPU72YeH4v5qZn8FfmpqYRG3gBeau/PnitKOBAVm07URd8zrP7yTIdLkgpm7yjF5P7DuL+xF/ch5zFVz88aUdWZZvOqkzPLFmgTEdel1rzvCOI+Mv7FwnEwi/dFagXXm1DRmUFpzS/v2QBgR76XeoPy9sDmNi9d5FAtG83cmavJPiM0gKu0xIHQdRuqyXv0FY53SZvCyA2sGeRwLgnhLxE+IxCFDCD7ezW1377/qFX5bRK8QtE6cHFAjYaORnw3M5upDtMb9Wuf//gWTl9nrcFEHUG76WvVjFicMqC53Z0geswfltbwDf4s9xNarSr5x7+uZkZjGodMuFNSLcbrtcuIS8Tl7vDjhldqN6eXRC4UyxhXBSQA99hRHq7sVJbwDPAyx0PogYX7gjlBYHbaQ7jWrs8+HYj2O2GKghmTQ2BUFHubBPVOzGbzS0IzMQmEdXYZMGntxvAbtOj5phd8oSScgezmIHCrRvJBYGp6yOIiQIy4dnntNM1S6jk7r8qd6qc0FOYHhlbELh59RomSJtMeB3Yrdp4bQHXrgtyR+KE3onJg+8gc/ZLZM6ex8S+Q0ho7HLhwW7RXK4pUOzZ9YbceT5n6EFSS2FCY59/8wnSjox8eKTaNMeWINCnk3sYSeoojHpDYI+fAnvyNEa9A0iorfLgN2uQbFO7awqAYdYUqb6EVHhO58RYMIw75crf+0ClgjE/A1YElwxPFmNN1kdrCsx/BSp4TOoxkNVRYE+cXjQLpT78BEmFWRJ8qo1EqlV9hlhqeCe9ibcFbtULL/b5tNaB+GtvLhKIHziClAguAT7Zqq7eaFF1LllgXsIW+ELKGTajpRBVWcB9+jlm8zxm+QK4M+cwLk6T0t48Ei3Ki0S9KTsCG3iLvyDlDJsh7ZhUWjDSacLITiPindLhky3KqfSmna2ElOTN3lcknWFldpvUArwKiWbFYUJOeLP3q/8KPtmsuCT7nlS89s51eX5Ycfgm5bVYk6L++6B/SsFqXZ8zuH9aOXjFb1yTdiPRyCRJem1W5/pm2Wu+SXl5vJV8iliOiPWY0zsOZDXUVMPhm1W3Ek2Kt5d0dSI3rM7VkiFtFzNqW7UR8IkW5ffJJnIbsdLhlHZFRmE+l1GYK/XDq6dTLeoLN5rJ2nc9yy7Sbl3HdXT1p3eYTnEdpl/YdmPxfvjUFo3AbtFcSW0mP0u0qYb45arzRoXt7Hw8vUO/IbONfJprb1/XsAevZjVEQ/MnF7GrGBH1TbgAAAAASUVORK5CYII=" 
                                         alt="Advertencia" class="warning-icon">
@@ -130,7 +138,7 @@
                         <form id="form2" enctype="application/x-www-form-urlencoded" class="needs-validation" novalidate>
                             <div class="col-md-12">
                                 <div class="label start" style="color: #333333;">Datos Personales</div>
-                                <div class="label middle" style="color: #333333;"><b>Contacto</b></div>
+                                <div class="label middle1" style="color: #333333;"><b>Contacto</b></div>
                                 <div class="label end" style="color: #333333;">Confirmación</div>
                                 <!-- Barra de progreso -->
                                 <div class="progress">
@@ -182,7 +190,7 @@
                             <div id="confirmation" class="form-container" style="display: none;">
                                 <div class="label start" style="color: #333333;">Datos Personales</div>
                                 <div class="label middle" style="color: #333333;">Contacto</div>
-                                <div class="label end" style="color: #333333;"><b>Confirmación</b></div>
+                                <div class="label end1" style="color: #333333;"><b>Confirmación</b></div>
                                 <!-- Barra de progreso -->
                                 <div class="progress">
                                     <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
