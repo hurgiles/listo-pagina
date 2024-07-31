@@ -235,14 +235,15 @@ button:hover {
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
 }
 .invalid-feedback {
-    font-size: 14px;
+    font-size: 14px !important;
     text-align: left;
 }
 
 .invalid-feedback img.warning-icon {
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+   /* margin-right: 8px;  Espacio entre el icono y el texto */
     width: 16px; /* Ajusta el tamaño del icono */
     height: 16px; /* Ajusta el tamaño del icono */
+    margin-left: 4px;
 }
 .text-header{
     font-size: 36px;
@@ -385,8 +386,19 @@ button:hover {
     transform: translateX(-50%); /* Center the circle */
 }
 
+.circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    background-color: #149100;
+}
+
 .circle.end {
     right: 0;
+}
+
+.circle.end1 {
+    right: 0;
+    background-color: #149100;
 }
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
