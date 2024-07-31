@@ -497,7 +497,7 @@ button:hover {
 
     .submit-btn {
         /*width: 100%;*/
-        padding: 10px 26px;
+        padding: 10px 11.9px;
         display: inline-block;
         margin-right: 2.3%;
     }
@@ -578,7 +578,7 @@ button:hover {
         display: flex; /* Añadido */
         justify-content: center; /* Añadido */
         align-items: center; /* Añadido */
-        margin-left: 26px; 
+        margin-left: 26px !important; 
         margin-top: -10px;
         order: -1;
     }
