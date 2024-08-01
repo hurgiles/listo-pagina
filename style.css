@@ -173,6 +173,7 @@ nav ul li a {
 
 #main-footer p {
     margin: 0;
+    font-size: 12px;
 }
 
 #main-footer a {
@@ -233,11 +234,13 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease; /* Transiciones con duraciones especificadas */
 }
 
 button:hover {
     background-color: #222222;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transition-delay: 0.1s;  /*Retraso antes de comenzar la transición */
 }
 .invalid-feedback {
     font-size: 14px !important;
@@ -307,17 +310,31 @@ button:hover {
     cursor: not-allowed;
     font-size: 1.5rem;
 }
-
+#next1{
+    float: right;
+}
 #back {
     background-color: #FFFFFF;
     color: #333333;
     border: 1px solid #333333;
     /*transition: border 0.3s ease;*/
+    margin-right: 5px;
 }
 #back:hover {
     border: 2px solid #333333 !important; /* Borde de 2 píxeles con color azul al hacer hover */
     box-shadow: none; /* Desactivar la sombra del hover en el botón con id 'back' */
 }
+
+/*#back,
+#complete {
+    flex: 1; /* Hace que los botones se expandan para ocupar todo el ancho del formulario 
+    padding: 10px; /* Ajusta el padding según tus necesidades 
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho del botón 
+    margin: 5px; /* Espacio entre los botones y el borde del contenedor 
+}*/
+/*#complete {
+    margin-left: 5px;  Espacio entre los botones
+} */
 .submit-btn:disabled {
     background-color: #eee;
 }
@@ -402,13 +419,22 @@ button:hover {
 .circle.start {
     left: 0;
 }
+.circle.start1 {
+    left: 0;
+    background-color: #149100;
+}
 
 .circle.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
 }
-
 .circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    background-color: #D9D9D9;
+}
+
+.circle.middle2 {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
     background-color: #149100;
@@ -417,8 +443,15 @@ button:hover {
 .circle.end {
     right: 0;
 }
-
 .circle.end1 {
+    right: 0;
+    background-color: #D9D9D9;
+}
+.circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+}
+.circle.end3 {
     right: 0;
     background-color: #149100;
 }
@@ -440,21 +473,13 @@ button:hover {
     margin-right: 20px;
 }
 /* Estilos para iPhone 11 y modelos más recientes */
-@media only screen and (min-width: 375px) and (max-width: 414px) and (min-device-pixel-ratio: 2) {
-    .submit-btn {
-        /* width: 100%; */
-        padding: 10px 10.2px;
+@media only screen and (max-width: 480px) {
+    .submit-btn {
+        width: 100%;
+        padding: 10px 2px;
         display: inline-block;
         margin-right: 2.3%;
-        }
-    .footer-right {
         margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 26px !important;
-        margin-top: -10px;
-        order: -1;
     }
 }
 
