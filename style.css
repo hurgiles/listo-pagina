@@ -198,6 +198,7 @@ nav ul li a {
 }
 #main-section .section-right {
     flex: 1;
+    background-color: #FFFFFF;
 }
 
 /*#main-section .section-left img {
@@ -322,6 +323,12 @@ button:hover {
 }
 
 
+
+/*Hacer que el boton sea negro cuando este activo*/
+.active {
+    background-color: #333333 !important;
+    color: white;
+}
 
 
 /*Progress bar
@@ -586,7 +593,8 @@ button:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 0px 0;
+        /*padding: 0px 0;*/
+        height: 120px;
     }
     #main-footer p {
         margin-top: -10px;
