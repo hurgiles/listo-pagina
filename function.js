@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form1.style.display = 'block';
         progressBar.style.width = '0%';
         progressBar.textContent = '';
+        next1.classList.add('active');
     });
 
     complete.addEventListener('click', function(event) {
