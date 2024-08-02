@@ -1,4 +1,3 @@
-/*Funciòn de los botones*/
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener referencias a los elementos del formulario y otros elementos relevantes
     var form1 = document.getElementById('formulariolanding');
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var back = document.getElementById('back');
     var complete = document.getElementById('complete');
     var confirmationMessage = document.getElementById('confirmationMessage');
-    var instagramField = document.getElementById('instagram');
+    var instagramField = document.getElementById('form_nombre');
     var progressBar = document.getElementById('progress-bar');
 
     next1.addEventListener('click', function(event) {
@@ -22,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Actualizar la barra de progreso al 50%
             progressBar.style.width = '50%';
             progressBar.textContent = '';
+            
         }
     });
 
