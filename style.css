@@ -303,7 +303,8 @@ button:hover {
 
 
 .submit-btn {
-    padding: 10px 118px;
+    width: 48.8%;
+    padding: 10px 10px;
     background-color: #ccc;
     border: none;
     border-radius: 20px;
@@ -475,18 +476,27 @@ button:hover {
 /* Estilos para iPhone 11 y modelos más recientes */
 @media only screen and (max-width: 480px) {
     .submit-btn {
-        width: 100%;
+        width: 96%;
         padding: 10px 2px;
         display: inline-block;
         margin-right: 2.3%;
         margin-bottom: 10px;
+    }
+    .footer-right {
+        margin-bottom: 10px;
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+        margin-left: 35px !important; 
+        margin-top: -10px;
+        order: -1;
     }
 }
 
 /* Media Query para dispositivos móviles */
 @media (min-width: 768px) {
     .submit-btn {
-        padding: 10px 47px;
+        /*padding: 10px 60px;*/
         background-color: #ccc;
         border: none;
         border-radius: 20px;
@@ -556,7 +566,7 @@ button:hover {
     }
 
     .submit-btn {
-        /*width: 100%;*/
+        width: 98%;
         padding: 10px 11.9px;
         display: inline-block;
         margin-right: 2.3%;
