@@ -681,3 +681,20 @@ button:hover {
         margin-right: 2.3%;
         }
 }
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-left: 30px; /* Ajusta el espacio para que el @ no se sobreponga al texto */
+}
+
+.input-wrapper::before {
+    content: "@";
+    position: absolute;
+    left: 10px; /* Ajusta la posición horizontal del @ */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Ajusta el color según tu diseño */
+    font-size: 1rem; /* Ajusta el tamaño del @ según tu diseño */
+}
