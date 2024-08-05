@@ -564,7 +564,9 @@ button:hover {
         width: 100%;
         padding: 10px;
     }
-
+    .form-control {
+        text-align: left; /* Asegura que el texto esté alineado a la izquierda en móviles */
+    }
     .submit-btn {
         width: 98%;
         padding: 10px 11.9px;
