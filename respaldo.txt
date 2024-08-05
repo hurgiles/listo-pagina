@@ -1,5 +1,4 @@
 html
-<!DOCTYPE html>
 <html lang="es">
     <head>
         <!-- Google Tag Manager -->
@@ -56,6 +55,18 @@ html
         .progress-bar-success {
             background-color: black !important;
         }
+        input[type="text"], input[type="date"], input[type="email"], input[type="tel"] {
+            padding-left: 15px; /* Ajusta este valor según sea necesario */
+        }
+        input[type="text"]::placeholder, input[type="date"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder{
+            padding-left: 0.3px; /* Ajusta este valor según sea necesario */
+        }
+        @media (min-width: 768px) {
+            .submit-btn {
+                width: 48% !important;
+                /* padding: 10*/
+        }
+        }
     </style>      
     </head>
     <body class="inicio">
@@ -85,13 +96,13 @@ html
                                 <!-- Barra de progreso -->
                                 <div class="progress">
                                     <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                    <div class="circle start"></div>
-                                    <div class="circle middle"></div>
-                                    <div class="circle end"></div>
+                                    <div class="circle start1"></div>
+                                    <div class="circle middle1"></div>
+                                    <div class="circle end1"></div>
                                 </div>
                                 <div class="row g-3 ">
-                                    <h1 style="color: #333333" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h1>
-                                    <h1 style="color: #333333; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y participa.</h1>
+                                    <h2 style="color: #333333" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
+                                    <h2 style="color: #333333; font-weight: 700" class=" fw-bold h2 mt-0  d-block d-md-none">Regístrate y participa.</h2>
                                 </div>
                                 <div class="row g-3">
                                     <p style="font: size 12px;">*Campos obligatorios</p>
@@ -145,8 +156,8 @@ html
                                 <div class="progress">
                                     <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     <div class="circle start"></div>
-                                    <div class="circle middle1"></div>
-                                    <div class="circle end"></div>
+                                    <div class="circle middle2"></div>
+                                    <div class="circle end2"></div>
                                 </div>
                                 <div class="row g-3 ">
                                     <h2 style="color: #333333" class=" fw-bold h2 mt-0  d-none d-md-block">Regístrate y participa.</h2>
@@ -197,9 +208,9 @@ html
                                     <div id="progress-bar" class="progress-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     <div class="circle start"></div>
                                     <div class="circle middle"></div>
-                                    <div class="circle end1"></div>
+                                    <div class="circle end3"></div>
                                 </div>
-                                <h2> <span id="confirmationMessage">[Nombre de usuario]</span>, ya estás por terminar!</h2>
+                                <h2><span id="confirmationMessage">[Nombre de usuario]</span>, ya estás por terminar!</h2>
                                 <p style="font-size: 16px;"><b>Revisa tu bandeja de entrada de correos</b>, da clic en el botón de <b>verificar</b> que encontrarás en el correo para que dirección de correo electrónico quede verificada y tu registro quedará registrado.</p>
                             </div>
                         </div>
@@ -223,7 +234,7 @@ html
                     <p>Todos los derechos reservados 2024 - <a href="http://franciscoamk.com" target="_blank"><u>Lee nuestros términos y condiciones de la promoción</u></a></p>
                 </div>
                 <div class="footer-right">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>
                     <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
                     <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
