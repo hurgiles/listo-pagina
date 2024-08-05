@@ -426,7 +426,7 @@ nav ul li a {
 /* #main-footer */
 .footer-right a {
     color: #333333;
-    margin: 0 10px;
+    margin: 0 20px;
     /*padding: 27px 0 0 20px;*/
     text-decoration: none;
     font-size: 24px; /* Tamaño del icono */
@@ -434,6 +434,7 @@ nav ul li a {
 
 #main-footer p {
     margin: 0;
+    font-size: 12px;
 }
 
 #main-footer a {
@@ -494,11 +495,13 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease; /* Transiciones con duraciones especificadas */
 }
 
 button:hover {
     background-color: #222222;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transition-delay: 0.1s;  /*Retraso antes de comenzar la transición */
 }
 .invalid-feedback {
     font-size: 14px !important;
@@ -561,24 +564,39 @@ button:hover {
 
 
 .submit-btn {
-    padding: 10px 118px;
+    width: 48.8%;
+    padding: 10px 10px;
     background-color: #ccc;
     border: none;
     border-radius: 20px;
     cursor: not-allowed;
     font-size: 1.5rem;
 }
-
+#next1{
+    float: right;
+}
 #back {
     background-color: #FFFFFF;
     color: #333333;
     border: 1px solid #333333;
     /*transition: border 0.3s ease;*/
+    margin-right: 5px;
 }
 #back:hover {
     border: 2px solid #333333 !important; /* Borde de 2 píxeles con color azul al hacer hover */
     box-shadow: none; /* Desactivar la sombra del hover en el botón con id 'back' */
 }
+
+/*#back,
+#complete {
+    flex: 1; /* Hace que los botones se expandan para ocupar todo el ancho del formulario 
+    padding: 10px; /* Ajusta el padding según tus necesidades 
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho del botón 
+    margin: 5px; /* Espacio entre los botones y el borde del contenedor 
+}*/
+/*#complete {
+    margin-left: 5px;  Espacio entre los botones
+} */
 .submit-btn:disabled {
     background-color: #eee;
 }
@@ -663,13 +681,22 @@ button:hover {
 .circle.start {
     left: 0;
 }
+.circle.start1 {
+    left: 0;
+    background-color: #149100;
+}
 
 .circle.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
 }
-
 .circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    background-color: #D9D9D9;
+}
+
+.circle.middle2 {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
     background-color: #149100;
@@ -678,8 +705,15 @@ button:hover {
 .circle.end {
     right: 0;
 }
-
 .circle.end1 {
+    right: 0;
+    background-color: #D9D9D9;
+}
+.circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+}
+.circle.end3 {
     right: 0;
     background-color: #149100;
 }
@@ -701,19 +735,20 @@ button:hover {
     margin-right: 20px;
 }
 /* Estilos para iPhone 11 y modelos más recientes */
-@media only screen and (min-width: 375px) and (max-width: 414px) and (min-device-pixel-ratio: 2) {
-    .submit-btn {
-        /* width: 100%; */
-        padding: 10px 10.2px;
+@media only screen and (max-width: 480px) {
+    .submit-btn {
+        width: 96%;
+        padding: 10px 2px;
         display: inline-block;
         margin-right: 2.3%;
-        }
+        margin-bottom: 10px;
+    }
     .footer-right {
         margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 26px !important;
+        display: flex; /* Añadido */
+        justify-content: center; /* Añadido */
+        align-items: center; /* Añadido */
+        margin-left: 35px !important; 
         margin-top: -10px;
         order: -1;
     }
@@ -722,7 +757,7 @@ button:hover {
 /* Media Query para dispositivos móviles */
 @media (min-width: 768px) {
     .submit-btn {
-        padding: 10px 47px;
+        /*padding: 10px 60px;*/
         background-color: #ccc;
         border: none;
         border-radius: 20px;
@@ -790,9 +825,11 @@ button:hover {
         width: 100%;
         padding: 10px;
     }
-
+    .form-control {
+        text-align: left; /* Asegura que el texto esté alineado a la izquierda en móviles */
+    }
     .submit-btn {
-        /*width: 100%;*/
+        width: 98%;
         padding: 10px 11.9px;
         display: inline-block;
         margin-right: 2.3%;
@@ -906,4 +943,21 @@ button:hover {
         display: inline-block;
         margin-right: 2.3%;
         }
+}
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-left: 30px; /* Ajusta el espacio para que el @ no se sobreponga al texto */
+}
+
+.input-wrapper::before {
+    content: "@";
+    position: absolute;
+    left: 10px; /* Ajusta la posición horizontal del @ */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Ajusta el color según tu diseño */
+    font-size: 1rem; /* Ajusta el tamaño del @ según tu diseño */
 }
