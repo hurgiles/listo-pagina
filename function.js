@@ -9,6 +9,34 @@ document.addEventListener('DOMContentLoaded', function() {
     var confirmationMessage = document.getElementById('confirmationMessage');
     var instagramField = document.getElementById('form_nombre');
     var progressBar = document.getElementById('progress-bar');
+    var instagramInput = document.getElementById('instagram');
+
+    // Función para asegurarse de que el campo de entrada tenga un "@" al obtener el foco si el valor no comienza con él.
+    function setInitialValue() {
+        if (!instagramInput.value.startsWith('@')) {
+            instagramInput.value = '@';
+        }
+    }
+
+    // Función que se activa cada vez que el usuario escribe en el campo.
+    function handleInputChange(e) {
+        var input = e.target;
+        if (!input.value.startsWith('@')) {
+            input.value = '@' + input.value.replace(/^@*/, '');
+        }
+    }
+
+    // Función que previene que el usuario borre el "@" al presionar la tecla de retroceso cuando el cursor está justo después del "@".
+    function preventRemovalOfAt(e) {
+        if (e.target.selectionStart === 1 && e.key === "Backspace") {
+            e.preventDefault();
+        }
+    }
+
+    // Agregar los event listeners al campo de entrada de Instagram
+    instagramInput.addEventListener('focus', setInitialValue);
+    instagramInput.addEventListener('input', handleInputChange);
+    instagramInput.addEventListener('keydown', preventRemovalOfAt);
 
     next1.addEventListener('click', function(event) {
         event.preventDefault(); // Previene la recarga de la página
@@ -21,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Actualizar la barra de progreso al 50%
             progressBar.style.width = '50%';
             progressBar.textContent = '';
-            
         }
     });
 
