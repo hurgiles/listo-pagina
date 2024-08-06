@@ -534,9 +534,11 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
     margin-left: -15px;
+    margin-top: 0px;
     }
     .label.end {
     right: 40px;
+    margin-top: 2px;
     }
     .circle.start1 {
     left: 0;
@@ -580,6 +582,10 @@ button:hover {
     background-color: #149100;
     margin-top: 15px;
     margin-right: -1px;
+    }
+    .label.start {
+    left: -20px;
+    margin-top: 0px; 
     }
 }
 
