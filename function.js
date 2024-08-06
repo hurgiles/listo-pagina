@@ -62,6 +62,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Función para verificar la validez del formulario y actualizar el estado del botón 'complete'
+    function updateCompleteButtonState() {
+        if (form2.checkValidity()) {
+            complete.classList.add('active');
+        } else {
+            complete.classList.remove('active');
+        }
+    }
+
     next1.addEventListener('click', function(event) {
         event.preventDefault(); // Previene la recarga de la página
         if (form1.checkValidity() === false || !validateAge()) {
@@ -73,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Actualizar la barra de progreso al 50%
             progressBar.style.width = '50%';
             progressBar.textContent = '';
+            // Verificar el estado del botón 'complete'
+            updateCompleteButtonState();
         }
     });
 
@@ -100,4 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             progressBar.textContent = '';
         }
     });
+
+    // Agregar un event listener para verificar el estado del botón cada vez que el usuario ingresa datos en el formulario
+    form2.addEventListener('input', updateCompleteButtonState);
 });
