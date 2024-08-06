@@ -412,19 +412,19 @@ button:hover {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: -25px;
+    /*top: -25px;*/
 }
 .label.start {
-    left: -40px;
+    left: -20px;
 }
 .label.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
-    margin-left: -17.5px;
+    margin-left: 0px;
 }
 
 .label.end {
-    right: 25px;
+    right: 5px;
 }
 
 /* circulos */
