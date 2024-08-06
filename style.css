@@ -862,6 +862,36 @@ button:hover {
         padding: 10px 115px;
     }
 }
+@media only screen and (min-width: 1440px) {
+    .label.start {
+        left: 55px;
+        /* margin-top: -25px; */
+    }
+    .label.middle {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -17px;
+        /* margin-top: -25px; */
+    }
+    .label.end {
+        right: 120px;
+        /* margin-top: -20px; */
+    }
+    .label.startf {
+        left: 55px;
+        /* margin-top: -25px; */
+    }
+    .label.middlef {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -17px;
+        /* margin-top: -25px; */
+    }
+    label.endf {
+        right: 120px;
+        /* margin-top: -20px; */
+    }
+  }
 @media only screen and (max-width: 480px) {
     .submit-btn {
         /* width: 100%; */
