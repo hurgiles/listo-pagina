@@ -878,7 +878,7 @@ button:hover {
 }
 @media only screen and (min-width: 1440px) {
     .label.start {
-        left: 55px;
+        left: 87px;
         /* margin-top: -25px; */
     }
     .label.middle {
@@ -888,11 +888,11 @@ button:hover {
         /* margin-top: -25px; */
     }
     .label.end {
-        right: 120px;
+        right: 150px;
         /* margin-top: -20px; */
     }
     .label.startf {
-        left: 55px;
+        left: 87px;
         /* margin-top: -25px; */
     }
     .label.middlef {
@@ -902,7 +902,7 @@ button:hover {
         /* margin-top: -25px; */
     }
     label.endf {
-        right: 120px;
+        right: 150px;
         /* margin-top: -20px; */
     }
   }
