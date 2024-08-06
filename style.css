@@ -745,6 +745,43 @@ button:hover {
     background-color: #D9D9D9;
     margin-top: 15px;
     }
+    .circle.start {
+    left: 0;
+    margin-left: -1px;
+    margin-top: 15px;
+    }
+    .circle.middle2 {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #149100;
+    margin-top: 15px;
+    }
+    .circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    }
+    .circle.end3 {
+    right: 0;
+    background-color: #149100;
+    margin-right: -1px;
+    margin-top: 15px;
+    }
+    .label.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -15px;
+    /* margin-top: -25px; */
+    }
+    .label.end {
+    right: 50px;
+    margin-top: 6px;
+    }
     .section-right {
         padding-left: 0px;
     }
