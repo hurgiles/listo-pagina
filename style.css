@@ -525,6 +525,57 @@ button:hover {
         width: 300px !important;  /*Ajusta el tamaño total de la barra de progreso aquí*/ 
         margin: 20px auto;  /*Centra la barra de progreso horizontalmente*/ 
     }
+    .label.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -15px;
+    }
+    .label.end {
+    right: 40px;
+    }
+    .circle.start1 {
+    left: 0;
+    background-color: #149100;
+    margin-top: 15px;
+    }
+    .circle.middle1 {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.end1 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.start {
+    left: 0;
+    margin-top: 15px;
+    margin-left: -1px;
+    }
+    .circle.middle2 {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #149100;
+    margin-top: 15px;
+    }
+    .circle.end2 {
+    right: 0;
+    background-color: #D9D9D9;
+    margin-top: 15px;
+    }
+    .circle.middle {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    }
+    .circle.end3 {
+    right: 0;
+    background-color: #149100;
+    margin-top: 15px;
+    margin-right: -1px;
+    }
 }
 
 /* Media Query para dispositivos móviles */
