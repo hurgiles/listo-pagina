@@ -533,12 +533,12 @@ button:hover {
     .label.middle {
     left: 50%;
     transform: translateX(-50%);
-    margin-left: -15px;
+    margin-left: -10px;
     margin-top: 0px;
     }
     .label.end {
     right: 40px;
-    margin-top: 2px;
+    margin-top: 0px;
     }
     .circle.start1 {
     left: 0;
