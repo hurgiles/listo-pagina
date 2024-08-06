@@ -416,15 +416,18 @@ button:hover {
 }
 .label.start {
     left: -20px;
+    margin-top: -25px;
 }
 .label.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
     margin-left: 0px;
+    margin-top: -25px;
 }
 
 .label.end {
-    right: 5px;
+    right: 20px;
+    margin-top: -20px;
 }
 
 /* circulos */
@@ -439,6 +442,7 @@ button:hover {
 }  
 .circle.start {
     left: 0;
+    margin-left: -1px;
 }
 .circle.start1 {
     left: 0;
@@ -475,6 +479,7 @@ button:hover {
 .circle.end3 {
     right: 0;
     background-color: #149100;
+    margin-right: -1px;
 }
 /* boton instagram */
 .instagram-button {
