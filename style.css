@@ -416,18 +416,18 @@ button:hover {
 }
 .label.start {
     left: -20px;
-    margin-top: -25px;
+    /*margin-top: -25px;*/
 }
 .label.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
     margin-left: 0px;
-    margin-top: -25px;
+    /*margin-top: -25px;*/
 }
 
 .label.end {
     right: 20px;
-    margin-top: -20px;
+    /*margin-top: -20px;*/
 }
 
 /* circulos */
