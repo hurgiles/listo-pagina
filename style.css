@@ -545,7 +545,7 @@ button:hover {
     .label.middle {
     left: 50%;
     transform: translateX(-50%);
-    margin-left: -10px !important;
+    margin-left: -9px !important;
     margin-top: 0px;
     }
     .label.middlef {
