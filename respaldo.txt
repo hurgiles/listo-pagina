@@ -975,6 +975,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instagramField = document.getElementById('form_nombre');
     var progressBar = document.getElementById('progress-bar');
     var instagramInput = document.getElementById('instagram');
+    var fechaNacimientoInput = document.getElementById('fecha-nacimiento');
 
     // Función para asegurarse de que el campo de entrada tenga un "@" al obtener el foco si el valor no comienza con él.
     function setInitialValue() {
@@ -999,13 +1000,36 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Agregar los event listeners al campo de entrada de Instagram
-    instagramInput.addEventListener('focus', setInitialValue);
-    instagramInput.addEventListener('input', handleInputChange);
-    instagramInput.addEventListener('keydown', preventRemovalOfAt);
+    if (instagramInput) {
+        instagramInput.addEventListener('focus', setInitialValue);
+        instagramInput.addEventListener('input', handleInputChange);
+        instagramInput.addEventListener('keydown', preventRemovalOfAt);
+    }
+
+    // Validación de la fecha de nacimiento
+    function validateAge() {
+        const fechaNacimiento = fechaNacimientoInput.value;
+        const fechaNacimientoDate = new Date(fechaNacimiento);
+        const hoy = new Date();
+        let edad = hoy.getFullYear() - fechaNacimientoDate.getFullYear();
+        const mes = hoy.getMonth() - fechaNacimientoDate.getMonth();
+
+        if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimientoDate.getDate())) {
+            edad--;
+        }
+
+        if (edad < 18) {
+            fechaNacimientoInput.classList.add('is-invalid');
+            return false;
+        } else {
+            fechaNacimientoInput.classList.remove('is-invalid');
+            return true;
+        }
+    }
 
     next1.addEventListener('click', function(event) {
         event.preventDefault(); // Previene la recarga de la página
-        if (form1.checkValidity() === false) {
+        if (form1.checkValidity() === false || !validateAge()) {
             event.stopPropagation();
             form1.classList.add('was-validated');
         } else {
