@@ -418,18 +418,30 @@ button:hover {
     left: -20px;
     /*margin-top: -25px;*/
 }
+.label.startf {
+    left: -20px;
+    margin-top: -25px;
+}
 .label.middle {
     left: 50%;
     transform: translateX(-50%); /* Center the circle */
     margin-left: 0px;
     /*margin-top: -25px;*/
 }
-
+.label.middlef {
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle */
+    margin-left: 0px;
+    margin-top: -25px;
+}
 .label.end {
     right: 20px;
     /*margin-top: -20px;*/
 }
-
+.label.endf {
+    right: 20px;
+    margin-top: -20px;
+}
 /* circulos */
 .circle {
     width: 20px;
@@ -536,7 +548,17 @@ button:hover {
     margin-left: -10px !important;
     margin-top: 0px;
     }
+    .label.middlef {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -10px !important;
+    margin-top: 0px;
+    }
     .label.end {
+    right: 25px !important;
+    margin-top: 0px !important;
+    }
+    .label.endf {
     right: 25px !important;
     margin-top: 0px !important;
     }
@@ -584,6 +606,10 @@ button:hover {
     margin-right: -1px;
     }
     .label.start {
+    left: -20px;
+    margin-top: 0px; 
+    }
+    .label.startf {
     left: -20px;
     margin-top: 0px; 
     }
