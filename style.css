@@ -537,8 +537,8 @@ button:hover {
     margin-top: 0px;
     }
     .label.end {
-    right: 25px;
-    margin-top: 0px;
+    right: 25px !important;
+    margin-top: 0px !important;
     }
     .circle.start1 {
     left: 0;
