@@ -69,6 +69,17 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             complete.classList.remove('active');
         }
+        // Verificar el estado del botón 'next1'
+        if (form1.checkValidity()) {
+            next1.classList.add('active');
+        } else {
+            next1.classList.remove('active');
+        }
+    }
+
+    function capitalizeFirstLetter(string) {
+        if (!string) return ''; // Asegúrate de que la cadena no esté vacía
+        return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
     next1.addEventListener('click', function(event) {
@@ -93,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form1.style.display = 'block';
         progressBar.style.width = '0%';
         progressBar.textContent = '';
-        next1.classList.add('active');
+        /*next1.classList.add('active');*/
     });
 
     complete.addEventListener('click', function(event) {
@@ -103,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             form2.classList.add('was-validated');
         } else {
             var instagramUser = instagramField.value;
+            instagramUser = capitalizeFirstLetter(instagramUser);
             confirmationMessage.textContent = instagramUser;
             form2.style.display = 'none';
             confirmation.style.display = 'block';
@@ -113,5 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Agregar un event listener para verificar el estado del botón cada vez que el usuario ingresa datos en el formulario
+    form1.addEventListener('input', updateCompleteButtonState);
     form2.addEventListener('input', updateCompleteButtonState);
 });
