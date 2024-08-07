@@ -413,11 +413,11 @@ button:hover {
     width: 20px;
     height: 20px;
     position: absolute;
-    /*top: -25px;*/
+    top: -25px;
 }
 .label.start {
     left: -20px;
-    /*margin-top: -25px;*/
+    /* margin-top: -25px; */
 }
 .label.startf {
     left: -20px;
@@ -879,7 +879,7 @@ button:hover {
 }
 @media only screen and (min-width: 1440px) {
     .label.start {
-        left: 87px;
+        /* left: 87px; */
         /* margin-top: -25px; */
     }
     .label.middle {
@@ -889,24 +889,24 @@ button:hover {
         /* margin-top: -25px; */
     }
     .label.end {
-        right: 150px;
+        /* right: 150px; */
         /* margin-top: -20px; */
     }
     .label.startf {
-        left: 87px;
-        /* margin-top: -25px; */
+        /* left: 87px; */
+        margin-top: 0px;
     }
     .label.middlef {
         left: 50%;
         transform: translateX(-50%);
         margin-left: -17px;
-        /* margin-top: -25px; */
+        margin-top: 0px;
     }
     .label.endf {
-        right: 150px;
-        /* margin-top: -20px; */
+        /* right: 150px; */
+        margin-top: 5px;
     }
-  }
+}
 @media only screen and (max-width: 480px) {
     .submit-btn {
         /* width: 100%; */
